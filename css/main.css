@@ -173,6 +173,12 @@ margin-top:15px;
 font-size:20px;
 }
 
+.memoria-game img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:10px;
+}
 /* CONTATO */
 
 .contact{
@@ -205,10 +211,4 @@ padding:30px 20px;
 text-align:center;
 color:#64748b;
 background:white;
-}
-.memoria-game img{
-width:100%;
-height:100%;
-object-fit:cover;
-border-radius:10px;
 }
