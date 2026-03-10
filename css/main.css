@@ -179,6 +179,12 @@ height:100%;
 object-fit:cover;
 border-radius:10px;
 }
+
+.project-card{
+background:#020617;
+border-radius:10px;
+overflow:hidden;
+}
 /* CONTATO */
 
 .contact{
