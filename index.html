@@ -40,18 +40,20 @@
   </div>
 </header>
 
+<!-- Overlay -->
+<div class="overlay"></div>
+
 <!-- HERO -->
 <section class="hero">
   <div>
     <h1 class="hero-title">Josimar Menegatt</h1>
-    <p class="hero-subtitle">Professor e desenvolvedor apaixonado por tecnologia, programação e pela criação de soluções digitais organizadas, modernas e funcionais, com foco em Desenvolvimento Web, Programação em Python e Análise de Dados.</p>
+    <p class="hero-subtitle">Professor e desenvolvedor apaixonado por tecnologia...</p>
     <div class="hero-actions">
       <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
       <a href="#contato" class="btn btn-ghost">Contato</a>
     </div>
   </div>
   <div>
-    <!--IMAGEM DE PERFIL JOSIMAR-->
     <img src="assets/img/josimar.jpeg" width="350">
   </div>
 </section>
@@ -59,10 +61,7 @@
 <!-- SOBRE -->
 <section class="section" id="sobre">
   <h2 class="section-title">Sobre mim</h2>
-  <p>Meu nome é Josimar Menegatt e minha trajetória na área de tecnologia começou com cursos de informática...</p>
-  <p>Atualmente atuo como professor na área de informática e programação...</p>
-  <p>Também desenvolvo atividades educacionais envolvendo Ciência de Dados e Jogos Digitais...</p>
-  <p>Venho direcionando meus estudos e projetos principalmente para Desenvolvimento Web e Python...</p>
+  <p>Meu nome é Josimar Menegatt e minha trajetória...</p>
 </section>
 
 <!-- HABILIDADES -->
@@ -135,9 +134,16 @@
 <script>
   const menuToggle = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector(".nav-menu");
+  const overlay = document.querySelector(".overlay");
 
   menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+
+  overlay.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    overlay.classList.remove("active");
   });
 </script>
 
